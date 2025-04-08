@@ -273,7 +273,7 @@ class Slideshow:
                     elif event.key == pygame.K_l and self.paused:
                         self.game.update()
                     # Playground controls
-                    elif self.current_slide == 64:
+                    elif self.current_slide == len(self.slides) - 1:
                         current_slide = list(self.slides[self.current_slide])
                         changed = False
                         
@@ -361,7 +361,7 @@ class Slideshow:
 
             image = self.slides[self.current_slide][0]
 
-            if self.current_slide == 64:  # Playground index
+            if self.current_slide == len(self.slides) - 1:  # Playground index
                 # Get current parameters
                 current_fps = self.slides[self.current_slide][4]
                 actual_fps = self.clock.get_fps()
