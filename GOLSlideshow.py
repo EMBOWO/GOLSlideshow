@@ -67,6 +67,8 @@ class GameOfLife:
         # Update the grid based on the rules
         self.grid = np.where(birth | survive, 1, 0)
 
+    # Stolen from https://github.com/asaltanubes/pygame-surface-color-inverter
+
     def invert_color(self, surface, mask=None, rel_pos=(0, 0), color=(255, 255, 255)):
         flag = {'sub': pygame.BLEND_RGB_SUB, 'min': pygame.BLEND_RGB_MIN, 'max': pygame.BLEND_RGB_MAX}
         
@@ -451,7 +453,7 @@ if __name__ == "__main__":
         """
         32o2$32o!
         """, offset=(16, 0),
-        cell_size=48,
+        cell_size=48,   
         paused=True)
 
     # slide 4.1
