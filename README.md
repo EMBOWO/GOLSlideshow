@@ -1,5 +1,6 @@
 # GOLSlideshow
 
+EPILEPSY WARNING
 There are two files, one for a version with just the slideshow and the other for one with the playground on the last slide.
 The code is VERY BAD.
 
