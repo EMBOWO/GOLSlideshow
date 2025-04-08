@@ -418,6 +418,15 @@ class Slideshow:
 if __name__ == "__main__":
     slideshow = Slideshow()
     
+    # slide 0
+    slideshow.add_slide_pattern(
+        slideshow.create_title_image("EPILEPSY WARNING", [], title_size=120, caption_size=60),
+        """
+        2ob2o22b2ob2o$2ob2o22b2ob2o$2bo26bo$2o28b2o$2o28b2o11$2o28b2o$2o28b2o$2bo26bo$2ob2o22b2ob2o$2ob2o22b2ob2o!
+        """,
+        cell_size=48,
+        paused=True)
+
     # slide 1
     slideshow.add_slide_pattern(
         slideshow.create_title_image("Conway's Game of Life", ["Alex"], title_size=120, caption_size=60),
